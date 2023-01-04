@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = DistributedCacheRedis.Web
+build_property.ProjectDir = C:\Users\ONUR\source\repos\UdemyRedisInMemory\DistributedCacheRedis.Web\

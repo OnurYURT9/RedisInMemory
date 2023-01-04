@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/lorbJVunNQWl5GxgIf+dNqIppWDVzhuC1wAblxiUrinZoYx50bgYuFaHX1T87d1GtZBFmirMrn0+ElLXgremg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ONUR\\source\\repos\\UdemyRedisInMemory\\RedisExchange.API.Web\\RedisExchange.API.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ONUR\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
+    "C:\\Users\\ONUR\\.nuget\\packages\\stackexchange.redis\\2.6.86\\stackexchange.redis.2.6.86.nupkg.sha512",
+    "C:\\Users\\ONUR\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\ONUR\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.31\\microsoft.netcore.app.host.win-x64.3.1.31.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using InMemoryApp.Web.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
@@ -25,8 +26,13 @@ namespace InMemoryApp.Web.Controllers
                 _memoryCache.Set<string>("Zaman", DateTime.Now.ToString(),options);
             options.RegisterPostEvictionCallback((key, value, reason, state) =>
             {
-            _memoryCache.Set("callback", $"{key}->{ value}=>sebep: { reason}");
+                _memoryCache.Set("callback", $"{key}->{ value}=>sebep: { reason}");
             });
+
+                Product p = new Product { ID = 1, Name = "Kalem", Price = 10 };
+                _memoryCache.Set<Product>("product:1", p);
+            _memoryCache.Set<double>("money", 100.99);
+            
             
 
             return View();
@@ -37,6 +43,7 @@ namespace InMemoryApp.Web.Controllers
             _memoryCache.TryGetValue("Callback", out string callback);
             ViewBag.Callback = callback;
             ViewBag.Zaman = zamancache;
+            ViewBag.Product = _memoryCache.Get<Product>("product:1");
             return View();
         }
     }

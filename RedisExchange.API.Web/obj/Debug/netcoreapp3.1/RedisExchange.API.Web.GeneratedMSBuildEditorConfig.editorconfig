@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = RedisExchange.API.Web
+build_property.ProjectDir = C:\Users\ONUR\source\repos\UdemyRedisInMemory\RedisExchange.API.Web\
